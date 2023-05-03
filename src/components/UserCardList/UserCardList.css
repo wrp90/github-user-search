@@ -1,0 +1,13 @@
+.user-card-list-container {
+    margin: 20px;
+}
+
+.users-title {
+    border-bottom: 1px dashed black;
+}
+
+.user-card-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
