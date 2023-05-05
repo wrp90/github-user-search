@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './features/Home/Home';
+import User from './features/User/User';
 import './App.css';
 
 
@@ -9,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/users/:userId" element={<User />} />
         </Routes>
       </BrowserRouter>
     </div>
