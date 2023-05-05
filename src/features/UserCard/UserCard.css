@@ -10,3 +10,7 @@
 .user-avatar {
     width: 200px;
 }
+
+.user-link {
+    display: block;
+}

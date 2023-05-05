@@ -10,7 +10,7 @@ const UserCard = ({ user }) => {
                 src={user.avatar_url} 
                 alt="avatar for user"
             />
-            <Link style={{ display: 'block'}} to={`/users/${user.id}`}>
+            <Link className="user-link" to={`/users/${user.id}`}>
                 See User's details
             </Link>
         </div>
