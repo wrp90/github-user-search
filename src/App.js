@@ -1,23 +1,16 @@
-import React, { useState } from 'react';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import Home from './features/Home/Home';
 import './App.css';
-import SearchForm from './components/SearchForm/SearchForm';
-import UserCardList from './components/UserCardList/UserCardList';
+
 
 function App() {
-  const [users, setUsers] = useState([]);
-
-  const searchUsername = async (username) => {
-    const userResponse = await fetch(
-      `https://api.github.com/users/${username}`
-    );
-    const user = await userResponse.json();
-    setUsers([...users, user]);
-  };
-
   return (
     <div className="container">
-      <SearchForm onHandleSubmit={searchUsername} />
-      <UserCardList users={users} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
