@@ -1,5 +1,5 @@
-import './SearchForm.css';
 import { useState } from 'react';
+import './SearchForm.css';
 
 const SearchForm = ({ onHandleSubmit }) => {
     const [username, setUsername] = useState('')
