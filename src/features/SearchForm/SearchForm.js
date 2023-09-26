@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Button, Form } from 'react-bootstrap';
 import './SearchForm.css';
 
 const SearchForm = ({ onHandleSubmit }) => {
@@ -12,13 +13,14 @@ const SearchForm = ({ onHandleSubmit }) => {
 
     return (
         <div className="search-form">
-            <form onSubmit={handleSubmit}>
+            <Form className="font" onSubmit={handleSubmit}>
                 <label>
-                    username:
+                    Username:
+                    <br></br>
                     <input type="text" value={username} onChange={(event) => setUsername(event.target.value)}/>
                 </label>
-                <input type="submit" value="Search"></input>
-            </form>
+                <Button className="search-button" type="submit">Search</Button>
+            </Form>
         </div>
     )
 };

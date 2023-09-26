@@ -1,6 +1,20 @@
 .search-form {
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 28px;
     margin: auto;
     width: 300px;
+}
+
+.search-button {
+    background-color: #207364;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Noto+Sans&family=Noto+Sans+JP:wght@200;300&family=Open+Sans:wght@400;500&display=swap');
+
+.font {
+  font-family: 'Noto Sans', sans-serif;
 }

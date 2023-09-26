@@ -2,3 +2,16 @@
   margin: 20px auto;
   width: 1000px;
 }
+
+body {
+  background: url('../src/assets/imgs/githubwallpaper.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+body {
+  color: white;
+}
